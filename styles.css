@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Inter:wght@300&family=Oswald:wght@400;500&display=swap');
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+#principal {
+    width: 100%;
+    height: 100vh;
+}
+
+.cabeçalho {
+    background-color: rgba(255, 0, 0, 0);
+    width: 100%;
+    height: 14%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+
+}
+
+.link-cabeçalho {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Bruno Ace', cursive;
+    text-decoration: none;
+}
+
+.link-cabeçalho:hover {
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+#banner {
+    background: url(./images/banner1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    filter: brightness(0.5);
+    z-index: 0;
+}
+
+.inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    width: 100%;
+    height: 84%;
+    z-index: 1;
+}
+
+.inner p {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+}
+
+.inner h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+}
+
+#botao-back {
+    background: url(./images/pra-cima.png);
+    background-size: contain;
+    position: fixed;
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+#corpo {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.box-planets {
+    width: 100%;
+    padding: 8rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.planeta {
+    /* animation: animacao 20s infinite linear; */
+}
+
+.jupiter {
+    background: url(./images/jupiter.png) no-repeat center/cover;
+    width: 200px;
+    height: 200px;
+}
+
+.marte {
+    background: url(./images/marte.png) no-repeat center/cover;
+    width: 200px;
+    height: 210px;
+
+}
+
+.terra {
+    background: url(./images/terra.png) no-repeat center/cover;
+    width: 200px;
+    height: 210px;
+
+}
+
+@keyframes animacao {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.box-sobre {
+    background: rgb(0, 0, 0);
+    display: flex;
+    gap: 10%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.astronauta-img {
+    background: url(./images/astronauta.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 400px;
+    width: 400px;
+    height: 460px;
+
+    margin-left: 5%;
+}
+
+.texto-sobre {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    width: 500px;
+}
+
+.texto-sobre h3 {
+    text-transform: uppercase;
+    font-family: 'Bruno Ace', cursive;
+    font-size: 50px;
+}
+
+.texto-sobre p {
+    font-family: 'Bruno Ace', cursive;
+    margin-left: 2rem;
+    margin-top: .6rem;
+}
+
+.button-saber-mais {
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    width: 200px;
+    margin-top: 1.2rem;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 20px;
+    background: #E05F36;
+    font-weight: 500;
+}
+
+.button-saber-mais:hover {
+    transition: 100ms;
+    background: #ad492b;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.button-saber-mais:active {
+    transition: 100ms;
+    transform: scale(0.99);
+}
+
+#box-moon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: black;
+
+}
+
+#box-moon h2 {
+
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: 'Bruno Ace', cursive;
+    color: white;
+    margin-top: 8rem;
+}
+
+.lua {
+    background: url(./images/lua.png) no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    margin-top: 3rem;
+}
+
+.box-curiosidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+.box-curiosidades h2 {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: 'Bruno Ace', cursive;
+    color: white;
+    margin-top: 8rem;
+
+}
+
+.curiosidades {
+    margin-top: 6rem;
+    width: 100%;
+    height: auto;
+    background: #E05F36;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    width: 200px;
+    height: 250px;
+    background: #A9330D;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.box p {
+    margin: 2rem 1rem 0;
+    font-family: 'Bruno Ace', cursive;
+    color: white;
+    line-height: 30px;
+}
+
+.icone {
+    margin-top: 2rem;
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.icone-sol {
+    background-image: url(./images/icons8-sol-100.png);
+
+}
+
+.icone-infinito {
+    background-image: url(./images/infinito.png);
+
+}
+
+.icone-cratera {
+    background-image: url(./images/cratera.png);
+
+}
+
+.icone-luz {
+    background-image: url(./images/luz.png);
+
+}
+
+#footer {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    background: rgb(0, 0, 0);
+    display: flex;
+    align-items: end;
+    
+
+}
+
+.box-rodape{
+   
+    width: 100%;
+    height: 16%;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    
+  
+}
+
+.box-rodape p{
+    text-transform: uppercase;
+    
+    font-family: 'Bruno Ace', cursive;
+}
+
+
+
